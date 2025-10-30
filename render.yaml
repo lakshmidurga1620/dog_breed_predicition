@@ -3,18 +3,34 @@ services:
     name: dog-breed-api
     env: python
     plan: free
-    # Specify Python version - Render uses this format
-    pythonVersion: "3.10.13"
+    pythonVersion: "3.11"
     buildCommand: |
       pip install --upgrade pip
-      pip install -r backend/requirements.txt
-    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 10000
+      pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
     envVars:
+      # Cloudinary Configuration (REQUIRED)
       - key: CLOUDINARY_CLOUD_NAME
-        value: your_cloud_name
+        sync: false  # Set this in Render Dashboard
       - key: CLOUDINARY_API_KEY
-        value: your_api_key
+        sync: false  # Set this in Render Dashboard
       - key: CLOUDINARY_API_SECRET
-        value: your_secret
+        sync: false  # Set this in Render Dashboard
+      
+      # Clerk Authentication (REQUIRED)
+      - key: CLERK_SECRET_KEY
+        sync: false  # Set this in Render Dashboard
+      - key: CLERK_PUBLISHABLE_KEY
+        sync: false  # Set this in Render Dashboard
+      
+      # MongoDB Configuration (REQUIRED)
+      - key: MONGODB_URI
+        sync: false  # Set this in Render Dashboard
+      - key: MONGODB_DB_NAME
+        value: dog_breed_predictor
+      
+      # Firebase Configuration (REQUIRED)
+      - key: FIREBASE_SERVICE_ACCOUNT_JSON
+        sync: false  # Set this in Render Dashboard - Use the JSON content from firebase-service-account.json
       - key: USE_FIREBASE
         value: "true"

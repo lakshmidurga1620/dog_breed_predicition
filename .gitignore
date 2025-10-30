@@ -39,8 +39,12 @@ venv.bak/
 .env
 *.env
 .env.*
-firebase_key.json
+
 firebase-service-account.json
+firebase_key.json
+firebase-admin.js
+backend/setup_firebase.py
+
 .env.secret
 .env.keys
 config/secrets.json

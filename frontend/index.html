@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#7156d6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Pawdentify</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        font-family: "Inter", "Segoe UI", "Arial", sans-serif;
+        background: radial-gradient(ellipse closest-side at 55% 24%, #8378ed22 0%, #7156d6 60%, #392b6b 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.6s;
+      }
+       Pawdentify-welcome {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        opacity: 0;
+        animation: fadeIn .9s cubic-bezier(.23,1.21,.59,.97) forwards;
+      }
+      .logo-emoji {
+        font-size: 4.2rem;
+        animation: logoPop 0.8s cubic-bezier(.23,1.21,.59,.97) 0.2s backwards, softGlow 2.2s infinite alternate;
+        filter: drop-shadow(0 0 16px #fae1a1) drop-shadow(0 2px 26px #fff2);
+      }
+      @keyframes logoPop {
+        0% {opacity:0; transform: scale(.2);}
+        60% {opacity:1; transform: scale(1.15);}
+        100% {opacity:1; transform: scale(1);}
+      }
+      @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+      @keyframes softGlow {
+        0% { filter: drop-shadow(0 0 12px #fae1a1) drop-shadow(0 2px 24px #fff);}
+        100% { filter: drop-shadow(0 0 28px #fae1a133) drop-shadow(0 2px 44px #fffadd44);}
+      }
+      .title {
+        font-size: 2.8rem;
+        font-weight: 900;
+        letter-spacing: -.03em;
+        color: #fff8f8;
+        text-shadow: 0 4px 18px #392b6b88, 0 2px 24px #fff8;
+        font-family: 'Lexend', 'Inter', 'Segoe UI', sans-serif;
+        margin-bottom: 0.1em;
+        animation: fadeIn .9s cubic-bezier(.23,1.21,.59,.97) 0.3s backwards;
+      }
+      .subtitle {
+        font-size: 1.19rem;
+        color: #fffbeecf;
+        text-shadow: 0 2px 10px #392b6b44;
+        font-weight: 500;
+        letter-spacing: .01em;
+        padding-bottom: 12px;
+        margin-top: -10px;
+        animation: fadeIn .8s 0.5s backwards;
+      }
+      @media(max-width:660px) {
+        .title{ font-size:2.2rem;}
+        .logo-emoji{ font-size:2.7rem;}
+        .subtitle{ font-size:.98rem;}
+         Pawdentify-welcome{ padding-top:40px;}
+      }
+    </style>
+  </head>
+  <body>
+    <div id=" Pawdentify-welcome">
+      <span class="logo-emoji" title="Dog face">🐕‍🦺</span>
+      <div class="title"> Pawdentify</div>
+      <div class="subtitle">Dog Breed Identification Made Delightful</div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

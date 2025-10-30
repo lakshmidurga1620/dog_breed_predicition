@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: dog-breed-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: CLOUDINARY_CLOUD_NAME
+        value: your_cloud_name
+      - key: CLOUDINARY_API_KEY
+        value: your_api_key
+      - key: CLOUDINARY_API_SECRET
+        value: your_secret
+      - key: USE_FIREBASE
+        value: "true"

@@ -1,0 +1,86 @@
+{
+  "short_name": "DogBreed AI",
+  "name": "DogBreed AI - Identify Your Dog's Breed Instantly",
+  "description": "AI-powered dog breed identification using advanced machine learning. Upload a photo and get instant breed recognition with confidence scores.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#667eea",
+  "background_color": "#667eea",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "utilities",
+    "photo",
+    "productivity"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-mobile.png",
+      "type": "image/png",
+      "sizes": "640x1136",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshot-desktop.png", 
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Identify Breed",
+      "short_name": "Predict",
+      "description": "Upload a photo to identify dog breed",
+      "url": "/predict",
+      "icons": [
+        {
+          "src": "icon-predict.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "About AI",
+      "short_name": "About", 
+      "description": "Learn about our AI technology",
+      "url": "/about",
+      "icons": [
+        {
+          "src": "icon-about.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}

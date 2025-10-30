@@ -1,0 +1,170 @@
+# =============================
+# 📦 Dependencies & Packages
+# =============================
+node_modules/
+frontend/node_modules/
+jspm_packages/
+bower_components/
+typings/
+.pnp
+.pnp.js
+.npm
+.yarn-integrity
+lerna-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =============================
+# 🧠 Python Environment
+# =============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.dll
+.Python
+env/
+venv/
+backend/venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =============================
+# ⚙️ Environment Variables & Secrets
+# =============================
+.env
+*.env
+.env.*
+firebase_key.json
+firebase-service-account.json
+.env.secret
+.env.keys
+config/secrets.json
+api_keys.json
+credentials.json
+
+# =============================
+# 🤖 Machine Learning Models
+# =============================
+*.h5
+*.keras
+*.pt
+*.pkl
+*.joblib
+*.ckpt
+*.pb
+models/
+weights/
+checkpoints/
+tensorboard_logs/
+
+# =============================
+# 🧪 Testing & Coverage
+# =============================
+coverage/
+.nyc_output/
+jest_*/
+__tests__/__snapshots__/
+lib-cov
+
+# =============================
+# 🏗️ Build & Production Outputs
+# =============================
+build/
+dist/
+build-dev/
+build-staging/
+build-production/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.storybook-out/
+storybook-static/
+.out
+
+# =============================
+# 🌍 Hosting / Deployment
+# =============================
+.vercel/
+.netlify/
+.firebase/
+.serverless/
+
+# =============================
+# 🧰 Tools & Configs
+# =============================
+.editorconfig
+.eslintrc.local
+.prettierrc.local
+.eslintcache
+.lock-wscript
+.typings/
+.tsbuildinfo
+
+# =============================
+# 🖼️ Assets & Large Files
+# =============================
+*.psd
+*.ai
+*.sketch
+uploads/
+temp_images/
+test_images/
+
+# =============================
+# 🗄️ Databases
+# =============================
+*.db
+*.sqlite
+*.sqlite3
+
+# =============================
+# 📑 Docs & Reports
+# =============================
+docs/_build/
+*.log
+logs/
+*.backup
+*.bak
+*.orig
+
+# =============================
+# 💻 IDE / Editor / OS Files
+# =============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =============================
+# 🧩 Temporary / Cache / Misc
+# =============================
+tmp/
+temp/
+*.tmp
+*.temp
+*.lock
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# =============================
+# 🐳 Docker
+# =============================
+.dockerignore
+Dockerfile.dev

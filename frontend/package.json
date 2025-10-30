@@ -1,0 +1,100 @@
+{
+  "name": "dog-breed-ai",
+  "version": "1.0.0",
+  "description": "AI-powered dog breed identification website using EfficientNetV2-B2 model",
+  "private": true,
+  "homepage": ".",
+  "keywords": [
+    "react",
+    "dog-breed",
+    "ai",
+    "machine-learning",
+    "image-classification",
+    "efficientnet"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@clerk/clerk-react": "^4.32.5",
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.0",
+    "@react-three/drei": "^9.114.3",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/postprocessing": "^2.16.3",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
+    "axios": "^1.12.2",
+    "clsx": "^2.1.1",
+    "firebase": "^12.4.0",
+    "framer-motion": "^12.23.22",
+    "gsap": "^3.13.0",
+    "lucide-react": "^0.544.0",
+    "react": "^18.2.0",
+    "react-animated-cursor": "^2.11.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.12.2",
+    "tailwind-merge": "^3.3.1",
+    "three": "^0.169.0",
+    "tsparticles": "^3.9.1",
+    "web-vitals": "^3.1.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
+    "dev": "npm start",
+    "preview": "npm run build && npx serve -s build -l 3000"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-unused-vars": "warn",
+      "react/prop-types": "off"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 2
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": "20.x",
+    "npm": ">=8.0.0"
+  }
+}

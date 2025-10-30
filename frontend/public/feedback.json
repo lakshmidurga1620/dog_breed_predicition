@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "breed": "Labrador",
+    "name": "Sarah Johnson",
+    "position": "Owner, The Corner Bistro",
+    "quote": "Managing staff was a nightmare. Now it's simple and AI forecasts staff needs accurately.",
+    "avatar": "/avatars/sarah.jpg",
+    "accuracy": 4.5,
+    "tags": ["Operations", "Forecasting"]
+  },
+  {
+    "id": 2,
+    "breed": "Beagle",
+    "name": "Michael Chen",
+    "position": "Head Chef, Urban Spoon",
+    "quote": "Saved countless hours and reduced food costs with intuitive recipe management.",
+    "avatar": "/avatars/michael.jpg",
+    "accuracy": 5,
+    "tags": ["Recipe", "Costs"]
+  },
+  {
+    "id": 3,
+    "breed": "Labrador",
+    "name": "Emily Rodriguez",
+    "position": "Operations Manager, Brew & Co.",
+    "quote": "Analytics gave us insights we never had before — a true game-changer.",
+    "avatar": "/avatars/emily.jpg",
+    "accuracy": 4,
+    "tags": ["Analytics", "Growth"]
+  }
+ 
+]

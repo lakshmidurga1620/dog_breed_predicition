@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#667eea" />
+    <meta name="description" content="AI-powered dog breed identification using advanced machine learning. Upload a photo and get instant breed recognition with confidence scores." />
+    <meta name="keywords" content="dog breed, AI, machine learning, image classification, EfficientNet, breed identification" />
+    <meta name="author" content=" Pawdentify" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.com/" />
+    <meta property="og:title" content=" Pawdentify - Identify Your Dog's Breed Instantly" />
+    <meta property="og:description" content="Upload a photo and get instant AI-powered dog breed identification with detailed breed information." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://your-domain.com/" />
+    <meta property="twitter:title" content=" Pawdentify - Identify Your Dog's Breed Instantly" />
+    <meta property="twitter:description" content="Upload a photo and get instant AI-powered dog breed identification with detailed breed information." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preload Critical Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
+    <title> Pawdentify - Identify Your Dog's Breed Instantly</title>
+    
+    <!-- Inline Critical CSS for faster loading -->
+    <style>
+      /* Critical CSS for initial loading */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Loading animation for better UX */
+      .initial-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      
+      .loader-content {
+        text-align: center;
+        color: white;
+      }
+      
+      .loader-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-top: 3px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 1rem;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      .loader-text {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <noscript>
+      <div style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-family: Inter, sans-serif;
+        text-align: center;
+        padding: 2rem;
+      ">
+        <div>
+          <h1>🚫 JavaScript Required</h1>
+          <p> Pawdentify requires JavaScript to function properly.</p>
+          <p>Please enable JavaScript in your browser to continue.</p>
+        </div>
+      </div>
+    </noscript>
+    
+    <!-- Initial loading screen -->
+    <div id="initial-loader" class="initial-loader">
+      <div class="loader-content">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">🐕 Loading  Pawdentify...</div>
+      </div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <!-- Remove initial loader when React app loads -->
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          const loader = document.getElementById('initial-loader');
+          if (loader) {
+            loader.style.opacity = '0';
+            loader.style.transition = 'opacity 0.5s ease-out';
+            setTimeout(function() {
+              loader.remove();
+            }, 500);
+          }
+        }, 1000);
+      });
+    </script>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": " Pawdentify",
+      "description": "AI-powered dog breed identification using advanced machine learning",
+      "url": "https://your-domain.com",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": " Pawdentify"
+      }
+    }
+    </script>
+  </body>
+</html>

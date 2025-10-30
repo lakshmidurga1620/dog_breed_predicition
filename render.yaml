@@ -2,10 +2,13 @@ services:
   - type: web
     name: dog-breed-api
     env: python
+    runtime: python
     plan: free
     buildCommand: pip install -r backend/requirements.txt
     startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 10000
     envVars:
+      - key: PYTHON_VERSION
+        value: "3.10.13"
       - key: CLOUDINARY_CLOUD_NAME
         value: your_cloud_name
       - key: CLOUDINARY_API_KEY
